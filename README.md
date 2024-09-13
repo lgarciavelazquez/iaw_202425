@@ -13,7 +13,7 @@
 [Conectar a GitHub con SSH](https://docs.github.com/es/authentication/connecting-to-github-with-ssh)  
 [Administrración de tokens de acceso personal](https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 
-[Apuntes git y GitHub](https://lumigv.github.io/iaw_202324/unidad1/git_y_github.pdf)
+[Apuntes git y GitHub](https://lgarciavelazquez.github.io/iaw_202425/unidad1/git_y_github.pdf)
 
        
 
