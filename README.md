@@ -10,10 +10,6 @@
   * [Ejercicio 4: Git. Colaborar en un proyecto de software libre. Pull Request (PR)](unidad1/taller4.md)
   * [Ejercicio 5: Creación de un sitio con GitHub pages](unidad1/taller5.md)
 
-[Conectar a GitHub con SSH](https://docs.github.com/es/authentication/connecting-to-github-with-ssh)  
-
-[Administrración de tokens de acceso personal](https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
-
 [Apuntes git y GitHub](https://lgarciavelazquez.github.io/iaw_202425/unidad1/git_y_github.pdf)
 
 [Apuntes github pages](https://lgarciavelazquez.github.io/iaw_202425/unidad1/github_pages.pdf)
