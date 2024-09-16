@@ -24,53 +24,56 @@ En este caso debemos crear en primer lugar un **token** (tipo *classic*), una fo
 
 		apt-get install git
 
-5. Configuración de git. Lo primero que deberías hacer cuando instalas Git es establecer tu nombre de usuario y dirección de correo electrónico (**Asegurate que los datos son correctos y que has puesto tu nombre completo**). Esto es importante porque las confirmaciones de cambios (commits) en Git usan esta información, y es introducida de manera inmutable en los commits que envías:
+4. Configuración de git. Lo primero que deberías hacer cuando instalas Git es establecer tu nombre de usuario y dirección de correo electrónico (**Asegurate que los datos son correctos y que has puesto tu nombre completo**). Esto es importante porque las confirmaciones de cambios (commits) en Git usan esta información, y es introducida de manera inmutable en los commits que envías:
 
 		git config --global user.name "John Doe"
 		git config --global user.email johndoe@example.com
 
 	De nuevo, sólo necesitas hacer esto una vez si especificas la opción `--global`, ya que Git siempre usará esta información para todo lo que hagas en ese sistema.
 
-6. Clonar el repositorio remoto. Copia la url SSH del repositorio (**no copies la URL https**) y vamos a clonar el repositorio en nuestro ordenador.
+5. Clonar el repositorio remoto. Copia la url SSH del repositorio (**copia la URL https si tienes problemas con URL ssh**) y vamos a clonar el repositorio en nuestro ordenador.
 
 		git clone git@github.com:xxxxxxx/xxxxxxx.git
+
+	Para comprobar que tienes configurado el repositorio usando la url SSH puedes ver el fichero de configuración en .git/config.
 
 	Comprueba que dentro del repositorio que hemos creado se encuentra el fichero README.md, en este fichero podemos poner la descripción del proyecto.
 
 **Nota IMPORTANTE**: Si usas conexión por **TOKENS** copia la **URL https**.
 
-8. Vamos a crear un nuevo fichero, lo vamos a añadir a nuestro repositorio local y luego lo vamos a sincronizar con nuestro repositorio remoto de GitHub. Cada vez que hagamos una modificación en un fichero lo podemos señalar creando un commit. Los mensajes de los commits son fundamentales para explicar la evolución de un proyecto. Un commit debe ser un conjunto pequeño de cambios de los ficheros del proyecto con una cierta coherencia.
+6. Vamos a crear un nuevo fichero, lo vamos a añadir a nuestro repositorio local y luego lo vamos a sincronizar con nuestro repositorio remoto de GitHub. Cada vez que hagamos una modificación en un fichero lo podemos señalar creando un commit. Los mensajes de los commits son fundamentales para explicar la evolución de un proyecto. Un commit debe ser un conjunto pequeño de cambios de los ficheros del proyecto con una cierta coherencia.
 
 		echo "Esto es una prueba">ejemplo.txt
 		git add ejemplo.txt
 		git commit -m "He creado el fichero ejemplo.txt"
 		git push
 
-9. Si modificas un fichero en tu repositorio local, no tienes que volver a añadirlo a tu repositorio (`git add`). Pero tienes que usar la opción -a al hacer el commit.
+7. Si modificas un fichero en tu repositorio local, no es necesario volver a añadirlo a tu repositorio (`git add`). Pero tienes que usar la opción -a al hacer el commit.
 
 		git commit -am "He modificado el fichero ejemplo.txt"
 		git push
 
-10. Si quieres cambiar el nombre de un fichero o directorio de tu repositorio:
+8. Si quieres cambiar el nombre de un fichero o directorio de tu repositorio:
 
 		git mv ejemplo.txt ejemplo2.txt
 		git commit -am "He cambiado el nombre del fichero"
 		git push
 
-11. Si quieres borrar un fichero de tu repositorio:
+9. Si quieres borrar un fichero de tu repositorio:
 
 		git rm ejemplo2.txt
 		git commit -am "He borrado el fichero ejemplo2"
 		git push
 
-12. Puedes clonar tu repositorio de GitHub en varios ordenadores (por ejemplo, si quieres trabajar en tu casa y en el instituto), por lo tanto antes de trabajar en un repositorio local tienes que sincronizar los posibles cambios que se hayan producido en el repositorio remoto, para ello:
+10. Puedes clonar tu repositorio de GitHub en varios ordenadores (por ejemplo, si quieres trabajar en tu casa y en el instituto), por lo tanto antes de trabajar en un repositorio local tienes que sincronizar los posibles cambios que se hayan producido en el repositorio remoto, para ello:
 
 		git pull
 
-13. Para comprobar el estado de mi repositorio local:
+11. Para comprobar el estado de mi repositorio local:
 
 		git status
 
+12. Busca información para crear un nuevo repositorio llamado **prueba2_tu_nombre**. En esta ocasión, crea primero el repositorio local (usando git init) y luego busca información para sincronizarlo y crear el repositorio remoto en GitHub.
 
 ## ¿Qué tienes que entregar?
 
