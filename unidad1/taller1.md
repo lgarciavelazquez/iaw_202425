@@ -10,7 +10,7 @@
 
 1. Crea una cuenta en GitHub (**Si no la tienes!!!**). La forma de acceder a los repositorios remotos de GitHub va a ser por SSH, por lo tanto debes copiar tu clave pública RSA a GitHub, para ello:
 	* Copia el contenido de tu fichero `~/.ssh/id_rsa.pub`, para ello: añade una nueva clave SSH en el apartado "SSH keys" de tu perfil en GitHub y pega el contenido de tu clave pública.
-	* Si no tienes ese fichero, puedes generar una nueva clave ssh pública: <http://librosweb.es/pro_git/capitulo_4/generando_tu_clave_publica_ssh.html>
+	* Si no tienes ese fichero, puedes generar una nueva clave ssh pública siguiendo las instrucciones del siguiente artículo: [Trabajando con claves SSH](unidad1/ssh-con-claves.md)
 
 **Nota IMPORTANTE**: Existen dos maneras diferentes de conectarse a GitHub de manera remota: `HTTPS` o `SSH`. Si tienes problemas con SSH, puedes utilizar el HTTPS. 
 En este caso debemos crear en primer lugar un **token** (tipo *classic*), una forma de autenticación necesaria para subir en remoto a nuestro repositorio. Una vez creado el *token*, la conexión al repositorio remoto se puede hacer de dos maneras:
@@ -22,7 +22,7 @@ En este caso debemos crear en primer lugar un **token** (tipo *classic*), una fo
 
 3. Instala git en tu ordenador, si es un Linux (**si no lo tienes instalado!!!**). **Nota**: Desde Windows utiliza Git Bash.
 
-		apt-get install git
+		apt install git
 
 4. Configuración de git. Lo primero que deberías hacer cuando instalas Git es establecer tu nombre de usuario y dirección de correo electrónico (**Asegurate que los datos son correctos y que has puesto tu nombre completo**). Esto es importante porque las confirmaciones de cambios (commits) en Git usan esta información, y es introducida de manera inmutable en los commits que envías:
 
