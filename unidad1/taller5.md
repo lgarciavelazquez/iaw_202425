@@ -1,4 +1,4 @@
-# Taller 5: Creación de un sitio con GitHub pages
+# Ejercicio 5: Creación de un sitio con GitHub pages
 
 ## ¿Qué vas a aprender en este taller?
 

@@ -1,4 +1,4 @@
-# Taller 3: Git. Trabajando con ramas y uniones
+# Ejercicio 3: Git. Trabajando con ramas y uniones
 
 ## ¿Qué vas a aprender en este taller?
 

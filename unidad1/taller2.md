@@ -1,4 +1,4 @@
-# Taller 2: Introducción a Markdown
+# Ejercicio 2: Introducción a Markdown
 
 ## ¿Qué vas a aprender en este taller?
 

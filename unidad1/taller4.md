@@ -1,4 +1,4 @@
-# Taller 4: ¿Cómo colaborar en un proyecto de software libre? ¿Qué es un Pull Request (PR)?"
+# Ejercicio 4: ¿Cómo colaborar en un proyecto de software libre? ¿Qué es un Pull Request (PR)?"
 
 ## ¿Qué vas a aprender en este taller?
 
