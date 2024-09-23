@@ -56,7 +56,7 @@ Una vez creado el *token*, la conexión al repositorio remoto se puede hacer de 
 		git commit -m "He creado los ficheros ejemplo1 y ejemplo2"
 		git push origin main
 ```
-**Nota**: Asegúrate que la rama principal se llama *main*, `git branch -v`, si no es así debes cambiar el nombre con el siguiente comando *git*, `git branch -M main` .
+**Nota**: Asegúrate que la rama principal se llama *main*, `git branch -v`, si no es así debes cambiar el nombre de la rama principal: `git branch -M main` .
 
 6. Cambia el texto de ejemplo1.txt por el siguiente: *Este es el primer archivo*. Si modificas un fichero en tu repositorio local, no es necesario volver a añadirlo a tu repositorio (`git add`). Pero tienes que usar la opción -a al hacer el commit. 
 ```
@@ -82,15 +82,13 @@ Una vez creado el *token*, la conexión al repositorio remoto se puede hacer de 
 This is the first file
 Modified from Linux Debian.
 ```
-Confirma el cambio y súbelo al repositorio remoto. 
-11.  Comprueba que se ha actualizado el repositorio remoto. 
-12.  Comprueba que el repositorio local en windows está con la versión antigüa del archivo *example1.txt*. Actualiza en el repositorio Windows los cambios que se hayan producido en el repositorio remoto, para ello ejecuta:   
+Confirma el cambio y súbelo al repositorio remoto.  
 
-`git pull`
+11.  Comprueba que se ha actualizado el repositorio remoto.   
+  
+12.  Comprueba que el repositorio local en windows está con la versión antigüa del archivo *example1.txt*. Actualiza en el repositorio Windows los cambios que se hayan producido en el repositorio remoto, para ello ejecuta:   `git pull`
 
-13.  Comprueba que se ha actualizado el repositorio local en Windows: 
-
-`git status`
+13.  Comprueba que se ha actualizado el repositorio local en Windows: `git status`
 
 14.  Vamos a crear un nuevo repositorio llamado **prueba2_tu_nombre**. Ten en cuenta lo siguiente:
 * En esta ocasión, crea primero el repositorio local en Windows (usando `git init`). El repositorio debe contener, al menos, dos archivos de texto: *archivo1.txt* y *archivo2.txt*. El contenido de ambos archivos es libre.
@@ -98,7 +96,7 @@ Confirma el cambio y súbelo al repositorio remoto.
 * Sube el repositorio local a GitHub (usando `git push`).
 * Clona el repositorio remoto en tu máquina virtual Linux Debian (usando `git clone`). 
 * Modifica, en Windows, uno de los archivos y añade un 3º archivo de texto llamado *archivo3.txt*. Confirma los cambios(usando `git add`, `git commit`) y súbelos al repositorio (usando `git push`).
-* * Actualiza la versión local del repositorio en Linux Debian (usando `git pull`).
+* Actualiza la versión local del repositorio en Linux Debian (usando `git pull`).
  
 
 ## ¿Qué tienes que realizar?
