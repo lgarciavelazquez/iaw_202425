@@ -9,31 +9,34 @@
 ## ¿Qué tienes que hacer?
 
 1. Crea una cuenta en GitHub (**Si no la tienes!!!**). La forma de acceder a los repositorios remotos de GitHub va a ser por SSH, por lo tanto debes copiar tu clave pública RSA a GitHub, para ello:
-	* Copia el contenido de tu fichero `~/.ssh/id_rsa.pub`, para ello: añade una nueva clave SSH en el apartado "SSH keys" de tu perfil en GitHub y pega el contenido de tu clave pública. Para más información, lee el siguiente artículo: <https://docs.github.com/es/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account>
-	* Si no tienes ese fichero, puedes generar una nueva clave ssh pública siguiendo las instrucciones del siguiente artículo: [Trabajando con claves SSH](ssh-con-claves.md)
 
-**Nota IMPORTANTE**: Existen dos maneras diferentes de conectarse a GitHub de manera remota: `HTTPS` o `SSH`. Si tienes problemas con SSH, puedes utilizar el HTTPS. 
+   * Genera una nueva clave ssh pública en el directorio `~/.ssh`, si no la tienes,   siguiendo las instrucciones del siguiente artículo: [Trabajando con claves SSH](ssh-con-claves.md)
+   	* Copia el contenido de tu fichero en tu perfil de GitHub `~/.ssh/id_rsa.pub`.  Añade una nueva clave SSH en el apartado "SSH keys" de tu perfil en GitHub y pega el contenido de tu clave pública. Para más información, lee el siguiente artículo: <https://docs.github.com/es/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account>
+	* 
+
+**Nota IMPORTANTE**: Existen dos maneras diferentes de conectarse a GitHub de manera remota: conexión con `SSH` o `HTTPS` con autenticación con clave de paso o **token** . Si tienes problemas con SSH, puedes utilizar el `HTTPS`. 
 En este caso debemos crear en primer lugar un **token** (tipo *classic*), una forma de autenticación necesaria para subir en remoto a nuestro repositorio. Para mas información, lee el siguiente artículo: <https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>
 
 Una vez creado el *token*, la conexión al repositorio remoto se puede hacer de dos maneras:
 * git remote add origin https://USERNAME:TOKEN@github.com/USERNAME/REPO.git  
 * git clone https://USERNAME:TOKEN@github.com/USERNAME/REPO.git
 
+**Nota IMPORTANE**: Si lo deseas, se puede configurar el USERNAME y el TOKEN como 
 
-2. Crea en GitHub un repositorio con el nombre **prueba_tu_nombre** (**inicializa el repositorio** con un fichero README) y la descripción **Repositorio de prueba 2ASIR**.
+1. Crea en GitHub un repositorio con el nombre **prueba_tu_nombre** (**inicializa el repositorio** con un fichero README) y la descripción **Repositorio de prueba 2ASIR**.
 
-3. Instala git en tu ordenador, si es un Linux (**si no lo tienes instalado!!!**). **Nota**: Desde Windows utiliza Git Bash.
+2. Instala git en tu ordenador, si es un Linux (**si no lo tienes instalado!!!**). **Nota**: Desde Windows utiliza Git Bash.
 
 		apt install git
 
-4. Configuración de git. Lo primero que deberías hacer cuando instalas Git es establecer tu nombre de usuario y dirección de correo electrónico (**Asegurate que los datos son correctos y que has puesto tu nombre completo**). Esto es importante porque las confirmaciones de cambios (commits) en Git usan esta información, y es introducida de manera inmutable en los commits que envías:
+3. Configuración de git. Lo primero que deberías hacer cuando instalas Git es establecer tu nombre de usuario y dirección de correo electrónico (**Asegurate que los datos son correctos y que has puesto tu nombre completo**). Esto es importante porque las confirmaciones de cambios (commits) en Git usan esta información, y es introducida de manera inmutable en los commits que envías:
 
 		git config --global user.name "John Doe"
 		git config --global user.email johndoe@example.com
 
 	De nuevo, sólo necesitas hacer esto una vez si especificas la opción `--global`, ya que Git siempre usará esta información para todo lo que hagas en ese sistema.
 
-5. Clonar el repositorio remoto. Copia la url SSH del repositorio (**copia la URL https si tienes problemas con URL ssh**) y vamos a clonar el repositorio en nuestro ordenador.
+4. Clonar el repositorio remoto. Copia la url SSH del repositorio (**copia la URL https si tienes problemas con URL ssh**) y vamos a clonar el repositorio en nuestro ordenador.
 
 		git clone git@github.com:xxxxxxx/xxxxxxx.git
 
