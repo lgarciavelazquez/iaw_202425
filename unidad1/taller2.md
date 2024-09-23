@@ -11,7 +11,7 @@
 
 ## ¿Qué tienes que hacer?
 
-Crea un fichero en Markdown llamado `taller2.md`. Este fichero tiene que tener los siguientes elementos en este orden:
+Crea un fichero en Markdown llamado `markdown.md`. Este fichero tiene que tener los siguientes elementos en este orden:
 
 * Un título principal
 * Un subtítulo

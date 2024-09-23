@@ -17,11 +17,11 @@
 **Nota IMPORTANTE**: Existen dos maneras diferentes de conectarse a GitHub de manera remota: conexión con `SSH` o `HTTPS` con autenticación con clave de paso o **token** . Si tienes problemas con SSH, puedes utilizar el `HTTPS`. 
 En este caso debemos crear en primer lugar un **token** (tipo *classic*), una forma de autenticación necesaria para subir en remoto a nuestro repositorio. Para mas información, lee el siguiente artículo: <https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>
 
-Una vez creado el *token*, la conexión al repositorio remoto se puede hacer de dos maneras:
+Una vez creado el *token*, la conexión al repositorio remoto se puede hacer de dos maneras, donde `USERNAME` es el usuario de GitHub y `TOKEN` es el token:
+```
 * git remote add origin https://USERNAME:TOKEN@github.com/USERNAME/REPO.git  
 * git clone https://USERNAME:TOKEN@github.com/USERNAME/REPO.git
-
-**Nota IMPORTANE**: Si lo deseas, se puede configurar el USERNAME y el TOKEN como 
+```
 
 1. Crea en GitHub un repositorio con el nombre **prueba_tu_nombre** (**inicializa el repositorio** con un fichero README) y la descripción **Repositorio de prueba 2ASIR**.
 
@@ -29,12 +29,21 @@ Una vez creado el *token*, la conexión al repositorio remoto se puede hacer de 
 
 		apt install git
 
-3. Configuración de git. Lo primero que deberías hacer cuando instalas Git es establecer tu nombre de usuario y dirección de correo electrónico (**Asegurate que los datos son correctos y que has puesto tu nombre completo**). Esto es importante porque las confirmaciones de cambios (commits) en Git usan esta información, y es introducida de manera inmutable en los commits que envías:
-
+3. Configuración de git. Lo primero que deberías hacer cuando instalas Git es establecer tu nombre de usuario y dirección de correo electrónico (**Asegurate que los datos son correctos y que has puesto tu nombre completo**). Esto es importante porque las confirmaciones de cambios (commits) en Git usan esta información, y es introducida de manera inmutable en los commits que envías, por ejemplo:
+```
 		git config --global user.name "John Doe"
 		git config --global user.email johndoe@example.com
-
+```
 	De nuevo, sólo necesitas hacer esto una vez si especificas la opción `--global`, ya que Git siempre usará esta información para todo lo que hagas en ese sistema.
+
+**Nota IMPORTANTE**: Si utilizas autenticación con clave de paso, puedes agregar el token a tu repositorio de la siguiente manera: 
+```
+		git config user.name USERNAME
+		git config user.password TOKEN
+```
+De esa manera la conexión al repositorio  es mas sencilla, sin necesidad de indicar el usuario de GitHub y el token en la URL:
+
+	git remote add origin https://github.com/USERNAME/REPO.git  
 
 4. Clonar el repositorio remoto. Copia la url SSH del repositorio (**copia la URL https si tienes problemas con URL ssh**) y vamos a clonar el repositorio en nuestro ordenador.
 
