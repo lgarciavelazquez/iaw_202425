@@ -101,4 +101,6 @@ Confirma el cambio y súbelo al repositorio remoto.
 
 ## ¿Qué tienes que realizar?
 
-1. Documenta detalladamente, de momento, en Microsoft Word todos los pasos a realizar en el apartado 14. Posteriormente pasaremos el documento a Markdown.
+1. Crea un fichero en Markdown llamado `ejercicio1.md` donde documentes todos los pasos a realizar en el apartado 14. 
+2. Sube el fichero `ejercicio1.md` al repositorio remoto que has creado en el taller anterior: **prueba_tu_nombre**.
+

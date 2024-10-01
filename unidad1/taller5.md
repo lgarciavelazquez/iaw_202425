@@ -17,10 +17,10 @@ Deberás por lo tanto crear un repositorio llamado **iaw** teniendo el sitio com
 
 El sitio dispondrá de una página de inicio llamada **README.md** (también le puedes llamar **index.md**), con un índice a algunas de las  actividades/talleres realizadas a lo largo del curso (talleres 1 a 4). La página de inicio se deberá encontrar en el nivel superior de la carpeta origen, en este caso el **directorio raíz**(/) de ___gh-pages___. De momento los talleres 1, 2 y 3 se llamarán de la siguiente manera:
 
-* **unidad1/taller1.md** (resolución del taller 1)
-* **unidad1/taller2.md** (resolución del taller 2)
-* **unidad1/taller3.md** (resolución del taller 3)
-* **unidad1/taller4.md** (resolución del taller 4)
+* **unidad1/ejercicio1.md** (resolución del ejercicio 1)
+* **unidad1/ejercicio2.md** (resolución del ejercicio 2)
+* **unidad1/ejercicio3.md** (resolución del ejercicio 3)
+* **unidad1/ejercicio4.md** (resolución del ejercicio 4)
 
 Todos los talleres deberán estar ubicados en un directorio llamado **unidad1**. Por otro lado, en el caso de la presencia de imágenes en la documentación de los talleres, deberán estar ubicadas en la ruta **unidad1/img**.
 

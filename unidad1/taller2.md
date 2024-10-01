@@ -11,7 +11,7 @@
 
 ## ¿Qué tienes que hacer?
 
-Crea un fichero en Markdown llamado `markdown.md`. Este fichero tiene que tener los siguientes elementos en este orden:
+Crea un fichero en Markdown llamado `ejercicio2.md`. Este fichero tiene que tener los siguientes elementos en este orden:
 
 * Un título principal
 * Un subtítulo
@@ -27,6 +27,6 @@ Crea un fichero en Markdown llamado `markdown.md`. Este fichero tiene que tener 
 
 ## ¿Qué tienes que realizar?
 
-1. Sube el fichero `markdown.md` al repositorio remoto que has creado en el taller anterior: **prueba_tu_nombre**.
+1. Sube el fichero `ejercicio2.md` al repositorio remoto que has creado en el taller anterior: **prueba_tu_nombre**.
 
 
