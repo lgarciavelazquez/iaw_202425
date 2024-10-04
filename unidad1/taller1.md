@@ -40,7 +40,7 @@ Una vez creado el *token*, la conexión al repositorio remoto se puede hacer de 
 
 4. Clona el repositorio remoto en tu máquina virtual Linux Debian 12. Copia la url SSH del repositorio (**copia la url HTTPS si tienes problemas con URL SSH**) y vamos a clonar el repositorio en nuestro ordenador.
 
-		`git clone git@github.com:USERNAME/REPO.git`
+		git clone git@github.com:USERNAME/REPO.git
 
 	Para comprobar que tienes configurado el repositorio usando la url SSH puedes ver el fichero de configuración en **.git/config**.
 
