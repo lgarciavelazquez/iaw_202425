@@ -77,7 +77,7 @@ Trabaja con el repositorio de los talleres anteriores.
 
 ## ¿Qué tienes que entregar?
 
-1. Crea un fichero en Markdown llamado `taller3.md` con la  información solicitada a continuación y sube el fichero al repositorio **prueba_tu_nombre** creado en el taller 1:
+1. Crea un fichero en Markdown llamado `ejercicio3.md` con la  información solicitada a continuación y sube el fichero al repositorio **prueba_tu_nombre** creado en el taller 1:
 
    * Crea una rama que se llame `primera` en tu local, y ejecuta la instrucción necesaria para comprobar que se ha creado.
    * Crea un nuevo fichero en esta rama y fusiónalo con la principal. ¿Se ha producido conflicto? Razona la respuesta.
@@ -85,4 +85,4 @@ Trabaja con el repositorio de los talleres anteriores.
    * Crea una rama que se llame `segunda`, y modifica un fichero en ella para producir un conflicto al unirlo a la rama principal. Entrega el contenido del fichero donde se ha producido el conflicto.
    * Soluciona el conflicto que has creado en el punto anterior y sincroniza la rama `segunda` en el remoto. Entrega una captura de pantalla donde se vea que se ha creado la rama en el repositorio de GitHub.
 
-2. Sube a la **Actividad 1.1** de la plataforma de Moodle del curso la URL de GitHub de tu repositorio **prueba_tu_nombre**.
+
