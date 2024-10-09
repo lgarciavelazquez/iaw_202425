@@ -23,6 +23,6 @@ En este ejercicio tienes que hacer un pull request sobre el siguiente repositori
 
 ## ¿Qué tienes que entregar?
 
-1. Crea un fichero en Markdown llamado `ejercicio4.md` con los pasos fundamentales (con instrucciones) para realizar el pull request  y sube el fichero al repositorio **prueba_tu_nombre** creado en el ejercicio 1.
+1. Crea un fichero en Markdown llamado `ejercicio4.md` con los pasos fundamentales (con instrucciones) para realizar el pull request  y sube el fichero al repositorio **prueba_tu_nombre** creado en el ejercicio 1.  
 
  

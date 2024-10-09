@@ -42,4 +42,4 @@ La página de inicio **README.md** (o **index.md**) tendrá una TABLA DE CONTENI
 
 ## ¿Qué tienes que entregar?
 
-Una vez finalizado el Ejercicio 5 deberás subir a la **Actividad 1.1** de TEAMS la URL de tu sitio web. Recuerda que la URL de tu sitio tendrá la siguiente forma: `https://tu_nombre_de_usuario.github.io/iaw/`
+Una vez finalizado el Ejercicio 5 deberás subir a la **Actividad 1.1** de TEAMS la URL de tu sitio web. Recuerda que la URL de tu sitio tendrá la siguiente forma: `https://tu_nombre_de_usuario.github.io/iaw/`. En tareas de TEAMS, encontrarás mas instrucciones sobre lo que debes entregar.
