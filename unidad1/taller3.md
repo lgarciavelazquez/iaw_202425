@@ -1,6 +1,6 @@
 # Ejercicio 3: Git. Trabajando con ramas y uniones
 
-## ¿Qué vas a aprender en este taller?
+## ¿Qué vas a aprender en este ejercicio?
 
 * Aprenderás el concepto de rama.
 * La gestión y el ciclo de vida (creación, modificación, borrado, ...) de ramas.
@@ -9,7 +9,7 @@
 
 ## ¿Qué tienes que hacer?
 
-Trabaja con el repositorio de los talleres anteriores.
+Trabaja con el repositorio de los ejercicios anteriores.
 
 1. Una rama representa una línea independiente de desarrollo, es como crear un nuevo área de trabajo que tendrá su historial propio de commits.
 2. Para  listar las ramas locales ejecuta:
@@ -77,7 +77,7 @@ Trabaja con el repositorio de los talleres anteriores.
 
 ## ¿Qué tienes que entregar?
 
-1. Crea un fichero en Markdown llamado `ejercicio3.md` con la  información solicitada a continuación y sube el fichero al repositorio **prueba_tu_nombre** creado en el taller 1:
+1. Crea un fichero en Markdown llamado `ejercicio3.md` con la  información solicitada a continuación y sube el fichero al repositorio **prueba_tu_nombre** creado en el ejercicio 1:
 
    * Crea una rama que se llame `primera` en un repositorio local, y ejecuta la instrucción necesaria para comprobar que se ha creado.
    * Crea un nuevo fichero en esta rama y fusiónalo con la principal. ¿Se ha producido conflicto? Razona la respuesta.

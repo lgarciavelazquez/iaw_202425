@@ -1,6 +1,6 @@
 # Ejercicio 1: Introducción a git y GitHub
 
-## ¿Qué vas a aprender en este taller?
+## ¿Qué vas a aprender en este ejercicio?
 
 * Recordar el uso de git para realizar el control de versiones de los proyectos.
 * Configurar una cuenta en GitHub, servicio que nos ofrece repositorios remotos.
@@ -102,5 +102,5 @@ Confirma el cambio y súbelo al repositorio remoto.
 ## ¿Qué tienes que realizar?
 
 1. Crea un fichero en Markdown llamado `ejercicio1.md` donde documentes todos los pasos a realizar en el apartado 14. 
-2. Sube el fichero `ejercicio1.md` al repositorio remoto que has creado en el taller anterior: **prueba_tu_nombre**.
+2. Sube el fichero `ejercicio1.md` al repositorio remoto que has creado en el ejercicio: **prueba_tu_nombre**.
 

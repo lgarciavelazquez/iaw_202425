@@ -1,11 +1,11 @@
 # Ejercicio 2: Introducción a Markdown
 
-## ¿Qué vas a aprender en este taller?
+## ¿Qué vas a aprender en este ejercicio?
 
 * Aprender la sintaxis básica del lenguaje de marcas Markdown para estructura la información en nuestro documentos.
 * Comprobar que se puede convertir el Markdown a HTML de manera muy sencilla.
 
-## Recursos para realizar este taller
+## Recursos para realizar este ejercicio
 
 * Puedes usar cualquier manual básico de Markdown, por ejemplo [Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/) o en español, [Tutorial de Markdown](https://tutorialmarkdown.com/)
 
@@ -27,6 +27,6 @@ Crea un fichero en Markdown llamado `ejercicio2.md`. Este fichero tiene que tene
 
 ## ¿Qué tienes que realizar?
 
-1. Sube el fichero `ejercicio2.md` al repositorio remoto que has creado en el taller anterior: **prueba_tu_nombre**.
+1. Sube el fichero `ejercicio2.md` al repositorio remoto que has creado en ejercicio anterior: **prueba_tu_nombre**.
 
 
