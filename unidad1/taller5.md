@@ -22,7 +22,7 @@ El sitio dispondrá de una página de inicio llamada **README.md** (también le 
 * **unidad1/ejercicio3.md** (resolución del ejercicio 3)
 * **unidad1/ejercicio4.md** (resolución del ejercicio 4)
 
-Todos los ejercicios deberán estar ubicados en un directorio llamado **unidad1**. Por otro lado, en el caso de la presencia de imágenes en la documentación de los talleres, deberán estar ubicadas en la ruta **unidad1/img**.
+Todos los ejercicios deberán estar ubicados en un directorio llamado **unidad1**. Por otro lado, en el caso de la presencia de imágenes en la documentación de los ejercicios, deberán estar ubicadas en la ruta **unidad1/img**.
 
 La página de inicio **README.md** (o **index.md**) tendrá una TABLA DE CONTENIDOS parecido al siguiente:
 
