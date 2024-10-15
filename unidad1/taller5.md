@@ -11,7 +11,7 @@
 
 ## ¿Qué tienes que hacer?
 
-Vas a crear un sitio de tipo proyecto/repositorio disponible en la siguiente URL:  `https://tu_nombre_de_usuario.github.io/iaw/`
+Vas a crear un sitio de tipo proyecto/repositorio disponible en la siguiente URL:  `https://tu_nombre_de_usuario.github.io/actividad1_1/`
 
 Deberás por lo tanto crear un repositorio llamado **iaw** teniendo el sitio como rama origen el **directorio raíz** (/) de una rama llamada  ___gh-pages___ que deberás crear previamente. Esa sera la fuente de publicación del sitio.
 
