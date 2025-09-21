@@ -64,7 +64,7 @@ En un repositorio `git` podemos diferenciar las siguientes secciones:
 * *Local repository*
 * *Remote repository*
 
-![](images/img-00.png)
+![](img/img-00.png)
 
 Figura 1: Imagen de [Oliver Steele](http://osteele.com).
 
@@ -537,7 +537,7 @@ Se recomienda leer el [capítulo 3: Ramificaciones en Git][2] del libro [Pro Git
 
 ## Cómo trabajar en equipo con `git`
 
-![](images/img-01.png)
+![](img/img-01.png)
 
 Figura 2: Imagen extraída del blog de [James Chambers](http://jameschambers.co/writing/git-team-workflow-cheatsheet/).
 
