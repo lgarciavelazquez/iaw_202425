@@ -1,36 +1,41 @@
 # Trabajando con claves ssh
 
-En el trabajo cotidiano de los administradores de sistemas una de las tarea que se hace a menudo es la conexión remota a servidores usando el protocolo ssh. Además de la posibilidad de usar nombre de usuario y contraseña para autentificarnos en la máquina remota, en este post vamos a estudiar otra manera de autentificación que nos proporciona ssh: **Autentificación usando claves ssh**.
+En el trabajo cotidiano de los administradores de sistemas una de las tarea que se hace a menudo es la **conexión remota a servidores** usando el protocolo **ssh**. Además de la posibilidad de usar nombre de usuario y contraseña para autentificarnos en la máquina remota, en este post vamos a estudiar otra manera de autentificación que nos proporciona ssh: Autentificación usando claves ssh también conocido como **Autenticación mediante clave pública/privada**. Les recuerdo que el SSH se explicará con mas detalle en otros módulo del curso.
 
-Como casi siempre, escribo este artículo para mis alumnos, en esta ocasión, para mis alumnos de 2º del ciclo de grado medio de Sistemas Microinformáticos y Redes. Vamos a ello:
+Como casi siempre, escribo este artículo para mis alumnos, en esta ocasión, para mis alumnos de 2º del ciclo de grado superior  de Administración de Sistemas Informáticos y en Red. Vamos a ello:
 
 ## Entorno de trabajo
 
-Vamos a trabajar con dos máquinas donde hemos instalado el sistema operativo Debian 11:
+Vamos a trabajar con dos máquinas (o nodos) una cliente y otra servidor con el sistema operativo Linux Debian 13. 
+<u>Nota</u>: Una de las máquinas puede ser tu host anfitrión realizando todos las acciones que se indican a continuación desde el terminal de *Git Bash*. 
 
-* **nodo1**: Actuará de cliente, desde donde nos vamos a conectar. Tiene la dirección IP `10.0.0.10` y hemos creado un usuario que hemos llamado **usuario1**.
-* **nodo2**: Actuará como servidor ssh, es la máquina a la que nos vamos a conectar. Tiene la dirección IP `10.0.0.11` y hemos creado un usuario que hemos llamado **usuario2**.
+Vamos a suponer dos nodos:
 
-Por lo tanto nos vamos a conectar desde la máquina `nodo1` con el usuario `usuario1` a la máquina `nodo2` con el `usuario2`.
+* **nodo1**: Actuará de cliente, desde donde nos vamos a conectar. Tiene la dirección IP `10.0.0.10` y hemos creado un usuario que hemos llamado **usuario**.
+* **nodo2**: Actuará como servidor ssh, es la máquina a la que nos vamos a conectar. Tiene la dirección IP `10.0.0.11` y hemos creado un usuario que hemos llamado **usuario**.
+
+Por lo tanto nos vamos a conectar desde la máquina `nodo1` con el usuario `usuario` a la máquina `nodo2` con el `usuario`.
 
 ## Creación de las claves ssh en el cliente
 
-En la máquina cliente `nodo1`, el `usuario1` va a crear sus claves ssh, en concreto, un par de claves pública/privada cifradas con el algoritmo RSA. Para generar las claves vamos a usar el comando `ssh-keygen` y durante la generación se nos solicita alguna información:
+En la máquina cliente `nodo1`, el `usuario` va a crear sus claves ssh, en concreto, un par de claves pública/privada cifradas con el algoritmo RSA. Para generar las claves vamos a usar el comando `ssh-keygen` y durante la generación se nos solicita alguna información:
 
 * **La ubicación y el nombre de las claves**: En principio el directorio donde se guarda es `.ssh` en el home del usuario, y el nombre puede ser cualquiera, pero para empezar os sugiero que dejéis el que viene por defecto `id_rsa`, de esta manera no habrá que indicar el nombre de la clave al realizar la conexión (se toma el nombre `id_rsa` por defecto). Por lo tanto en la primera pregunta dejamos los valores por defecto.
 * **Frase de paso (passphrase)**: Se nos pide a continuación una palabra de paso. Por seguridad, os sugiero que la pongáis porque será la contraseña de vuestra clave privada. Al utilizar la clave privada se os pedirá la frase de paso. Si vuestra clave privada cae en malas manos necesitarán esta frase para poder usarla.
+
+ <u>Nota</u>: En nuestro caso, para facilitar el trabajo vamos a dejar la clave de paso en blanco. 
 
 <!--more-->
 
 ```
 usuario1@nodo1:~$ ssh-keygen
 Generating public/private rsa key pair.
-Enter file in which to save the key (/home/usuario1/.ssh/id_rsa): 
-Created directory '/home/usuario1/.ssh'.
+Enter file in which to save the key (/home/usuario/.ssh/id_rsa): 
+Created directory '/home/usuario/.ssh'.
 Enter passphrase (empty for no passphrase): 
 Enter same passphrase again: 
-Your identification has been saved in /home/usuario1/.ssh/id_rsa
-Your public key has been saved in /home/usuario1/.ssh/id_rsa.pub
+Your identification has been saved in /home/usuario/.ssh/id_rsa
+Your public key has been saved in /home/usuario/.ssh/id_rsa.pub
 The key fingerprint is:
 SHA256:FfyzzFqODXZi+sFeLei+1ILURDTmzHwt8khSUvj+TjY usuario1@nodo1
 The key's randomart image is:
@@ -71,11 +76,11 @@ Para que con nuestra clave privada podamos autentificarnos al conectarnos con ss
 Para realizar esta copia vamos a usar la instrucción `ssh-copy-id` desde el cliente, indicando la clave pública que vamos a copiar:
 
 ```
-usuario1@nodo1:~$ ssh-copy-id -i .ssh/id_rsa.pub usuario2@10.0.0.11
+usuario1@nodo1:~$ ssh-copy-id -i .ssh/id_rsa.pub usuario@10.0.0.11
 /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: ".ssh/id_rsa.pub"
 /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
 /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
-usuario2@10.0.0.11's password: 
+usuario@10.0.0.11's password: 
 
 Number of key(s) added: 1
 
@@ -100,11 +105,11 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC9WwLHgn7oJxGOyc7zCfEg+FFF/mL0pSkGsLHHb6wC
 
 ## Accediendo por ssh sin contraseña
 
-Ahora desde el cliente podremos acceder desde el `usario1` (utilizando su clave privada) al `usuario2` del servidor sin necesidad de introducir la contraseña de ese usuario, sin embargo como estamos usando la clave privada se nos pedirá la frase de paso:
+Ahora desde el cliente podremos acceder desde el `usuario` (utilizando su clave privada) al `usuario` del servidor sin necesidad de introducir la contraseña de ese usuario, sin embargo como estamos usando la clave privada se nos pedirá la frase de paso:
 
 ```
-usuario1@nodo1:~$ ssh usuario2@10.0.0.11
-Enter passphrase for key '/home/usuario1/.ssh/id_rsa': 
+usuario1@nodo1:~$ ssh usuario@10.0.0.11
+Enter passphrase for key '/home/usuario/.ssh/id_rsa': 
 Linux nodo2 5.10.0-20-amd64 #1 SMP Debian 5.10.158-2 (2022-12-13) x86_64
 
 The programs included with the Debian GNU/Linux system are free software;
