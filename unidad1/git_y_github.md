@@ -33,20 +33,24 @@ sudo apt-get update
 sudo apt-get install git
 ```
 
+```
+sudo apt update
+sudo apt install git
+```
+
 #### Windows
 
 Descargar desde la web oficial: http://git-scm.com/downloads.
 
 ### Configuración de `git`
 
-Configuramos el nombre y el email que aparecerán en los *commits* que hagamos sobre los repositorios.
+Configuramos el nombre y el email que aparecerán en los *commits* que hagamos sobre los repositorios. 
+```
+git config --global user.name "Usuario GitHub"
+```
 
 ```
-git config --global user.name "Nombre"
-```
-
-```
-git config --global user.email "correo@electronico.com"
+git config --global user.password "correo@electronico.com"
 ```
 
 Para comprobar si se han aplicado los cambios podemos ejecutar el siguiente comando para mostrar cuál es la configuración actual de `git`:
@@ -73,8 +77,8 @@ Figura 1: Imagen de [Oliver Steele](http://osteele.com).
 Un archivo puede estar en alguno de los siguientes estados:
 
 * Sin seguimiento (*untracked*)
-* Preparado (*staged*)
 * Modificado (*modified*)
+* Preparado (*staged*)
 * Confirmado (*commited*)
 
 El siguiente diagrama muestra en qué sección se puede encontrar cada archivo en función de su estado.
@@ -174,6 +178,12 @@ El comando anterior nos permite seleccionar cuáles son los archivos que queremo
 
 ```
 git add -A
+```
+
+También:
+
+```
+git add .
 ```
 
 **Paso 3**
@@ -477,6 +487,13 @@ Utilizaremos los mismos comandos que usamos para trabajar con un repositorio loc
 git push
 ```
 
+Comando mas concreto donde indicamos repositorio remoto y rama:
+
+```
+git push origin main
+```
+
+
 Usamos este comando para enviar al repositorio remoto los *commits* que hemos hecho en nuestro repositorio local. La forma más habitual de usarlo es hacerlo después de cada `commit`.
 
 ```
@@ -508,6 +525,12 @@ git push
 
 ```
 git pull
+```
+
+Comando mas concreto donde indicamos repositorio remoto y rama:
+
+```
+git pull origin main
 ```
 
 Usamos este comando para recibir los nuevos *commits* que existen en el repositorio remoto y aún no tenemos en nuestro repositorio local. Además de recibir los nuevos cambios, los fusiona con el contenido de nuestro repositorio local, actualizando de este modo los archivos que tengamos en la sección `Local Repository` y `Workspace`. Esto quiere decir que si teníamos un archivo con estado `Modified` en la sección `Workspace` se perderían todos los cambios.
