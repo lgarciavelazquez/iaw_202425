@@ -10,7 +10,7 @@ En este taller de introducción a `git` y [GitHub][1] aprenderemos los comandos 
   1.5 [Cómo deshacer cambios](#cómo-deshacer-cambios)  
   1.6 [Borrando y moviendo/renombrando archivos](#borrando-y-moviendorenombrando-archivos)  
   1.7 [Cómo trabajar con un repositorio remoto](#cómo-trabajar-con-un-repositorio-remoto)  
-  1.8 [Branches](#branches)  
+  1.8 [Ramas](#ramas)  
   1.9 [Cómo trabajar en equipo con `git`](#cómo-trabajar-en-equipo-con-git)  
   1.10 [El archivo `.gitignore`](#el-archivo-gitignore)  
   1.11 [Consultar el historial de *commits*](#consultar-el-historial-de-commits)  
@@ -586,9 +586,9 @@ git remote rm taller-git
 git remote rm origin
 ```
 
-## Branches
+## Ramas
 
-Cualquier sistema de control de versiones moderno tiene algún mecanismo para soportar el uso de ramas. Cuando hablamos de ramificaciones, significa que tú has tomado la rama principal de desarrollo (master), la "copias" y a partir de ahí continuas trabajando sin seguir la rama principal de desarrollo.
+Cualquier sistema de control de versiones moderno tiene algún mecanismo para soportar el uso de ramas. Se conocen también como "branches". Cuando hablamos de ramificaciones, significa que tú has tomado la rama principal de desarrollo (master), la "copias" y a partir de ahí continuas trabajando sin seguir la rama principal de desarrollo.
 
 **Nota:** Recuerda que la rama principal de un repositorio tradicionalmente se llama `master`. Sin embargo puedes encontrarte algún repositorio donde su rama principal se llama `main`.
 
