@@ -588,7 +588,8 @@ git remote rm origin
 
 ## Branches
 
-Cualquier sistema de control de versiones moderno tiene algún mecanismo para soportar el uso de ramas. Cuando hablamos de ramificaciones, significa que tú has tomado la rama principal de desarrollo (master), la "copias" y a partir de ahí continuas trabajando sin seguir la rama principal de desarrollo. 
+Cualquier sistema de control de versiones moderno tiene algún mecanismo para soportar el uso de ramas. Cuando hablamos de ramificaciones, significa que tú has tomado la rama principal de desarrollo (master), la "copias" y a partir de ahí continuas trabajando sin seguir la rama principal de desarrollo.
+
 **Nota:** Recuerda que la rama principal de un repositorio tradicionalmente se llama `master`. Sin embargo puedes encontrarte algún repositorio donde su rama principal se llama `main`.
 
 Comandos básicos para administrar ramas:
