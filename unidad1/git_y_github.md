@@ -44,13 +44,15 @@ Descargar desde la web oficial: http://git-scm.com/downloads.
 
 ### Configuración de `git`
 
+Lo primero que hay que hacer cuando instales Git es establecer tu nombre de usuario y dirección de correo electrónico. Esto es importante porque los 2commits" de Git usan esta información, y es introducida de manera inmutablle en los commits que envías.
+
 Configuramos el nombre y el email que aparecerán en los *commits* que hagamos sobre los repositorios. 
 ```
-git config --global user.name "Usuario GitHub"
+git config --global user.name "Nombre"
 ```
 
 ```
-git config --global user.password "correo@electronico.com"
+git config --global user.email "correo@electronico.com"
 ```
 
 Para comprobar si se han aplicado los cambios podemos ejecutar el siguiente comando para mostrar cuál es la configuración actual de `git`:
