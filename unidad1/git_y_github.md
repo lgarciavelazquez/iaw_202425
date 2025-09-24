@@ -196,6 +196,26 @@ Una vez que tenemos los archivos en la ***staging area*** tenemos que hacer un *
 git commit -m "Breve comentario con los cambios realizados"
 ```
 
+**Paso 4**
+
+Podemos revisar el estado de los archivos con los siguientes comandos:
+
+```
+git status
+git status -s
+```
+
+**Paso 5**
+
+Podemos ver el historial de confirmaciones: 
+
+```
+git log
+git log --oneline
+```
+
+
+
 ## Cómo deshacer cambios
 
 ### Modificar el texto del último *commit*
@@ -460,6 +480,7 @@ Suponemos que ya tenemos creado un repositorio local y queremos añadir el repos
 
 ```
 git remote add taller-git https://github.com/josejuansanchez/taller-git-github.git
+git remote add origin https://github.com/josejuansanchez/taller-git-github.git
 ```
 
 Para comprobar si el repositorio remoto se ha añadido correctamente ejecutamos:
@@ -492,6 +513,7 @@ git push
 Comando mas concreto donde indicamos repositorio remoto y rama:
 
 ```
+git push taller-git main
 git push origin main
 ```
 
@@ -532,6 +554,7 @@ git pull
 Comando mas concreto donde indicamos repositorio remoto y rama:
 
 ```
+git pull taller-git main
 git pull origin main
 ```
 
@@ -556,9 +579,32 @@ Tenga en cuenta que `git pull` es equivalente a realizar `git fetch` seguido de 
 
 ```
 
+#### Eliminar repositorio remoto
+
+```
+git remote rm taller-git
+git remote rm origin
+```
+
 ## Branches
 
-Se recomienda leer el [capítulo 3: Ramificaciones en Git][2] del libro [Pro Git][3] de Scott Chacon y Ben Straub.
+Cualquier sistema de control de versiones moderno tiene algún mecanismo para soportar el uso de ramas. Cuando hablamos de ramificaciones, significa que tú has tomado la rama principal de desarrollo (master), la "copias" y a partir de ahí continuas trabajando sin seguir la rama principal de desarrollo. 
+**Nota:** Recuerda que la rama principal de un repositorio tradicionalmente se llama `master`. Sin embargo puedes encontrarte algún repositorio donde su rama principal se llama `main`.
+
+Comandos básicos para administrar ramas:
+
+```
+git branch                # Ver ramas
+git branch -v    # Muestra ramas y su último commit.
+git branch nombre_rama      # Crear nueva rama
+git checkout nombre_rama    # Cambiar a la rama. Copia esa rama en el WorkSpace (área de trabajo).
+git checkout -b nombre_rama    # Crea nueva rama y salta a ella. Copia esa rama en el WorkSpace (área de trabajo).
+git branch -m nuevo_nombre_rama  # Renombra rama
+git branch -M nuevo_nombre_rama  # Renombra rama de manera forzada. Si existe otra rama con ese nombre, la sobreescribe.
+git merge nombre_rama      # Fusionar nombre_rama a la rama actual
+git branch -d nombre_rama   # Borrar rama. Fallará si la rama tiene commits que no están presentes en la rama actual.
+git branch -D nombre_rama   # Borrar rama de manera forzada.
+```
 
 ## Cómo trabajar en equipo con `git`
 
