@@ -10,9 +10,11 @@
 
 1. Crea una cuenta en GitHub (**Si no la tienes!!!**). La forma de acceder a los repositorios remotos de GitHub va a ser por SSH, por lo tanto debes copiar tu clave pública RSA a GitHub, para ello:
 
-   * Genera una nueva clave ssh pública en el directorio `~/.ssh`, si no la tienes,   siguiendo las instrucciones del siguiente artículo: [Trabajando con claves SSH](ssh-con-claves.md)
-   	* Copia el contenido de tu fichero en tu perfil de GitHub `~/.ssh/id_rsa.pub`.  Añade una nueva clave SSH en el apartado "SSH keys" de tu perfil en GitHub y pega el contenido de tu clave pública. Para más información, lee el siguiente artículo: <https://docs.github.com/es/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account>
-	* 
+   * Genera una nueva clave ssh pública en el directorio `~/.ssh`, si no la tienes,   sigue las instrucciones del siguiente artículo: [Trabajando con claves SSH](ssh-con-claves.md)
+   * Copia el contenido de tu fichero en tu perfil de GitHub `~/.ssh/id_rsa.pub`.
+   * Añade una nueva clave SSH en el apartado "SSH keys" de tu perfil en GitHub y pega el contenido de tu clave pública.
+   * Para más información, lee el siguiente artículo: <https://docs.github.com/es/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account>
+	 
 
 **Nota IMPORTANTE**: Existen dos maneras diferentes de conectarse a GitHub de manera remota: conexión con `SSH` o `HTTPS` con autenticación con clave de paso o **token** . Si tienes problemas con SSH, puedes utilizar el `HTTPS`. 
 En este caso debemos crear en primer lugar un **token** (tipo *classic*), una forma de autenticación necesaria para subir en remoto a nuestro repositorio. Para mas información, lee el siguiente artículo: <https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>
