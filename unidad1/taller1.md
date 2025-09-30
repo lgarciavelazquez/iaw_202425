@@ -11,8 +11,7 @@
 1. Crea una cuenta en GitHub (**Si no la tienes!!!**). La forma de acceder a los repositorios remotos de GitHub va a ser por SSH, por lo tanto debes copiar tu clave pública RSA a GitHub, para ello:
 
    * Genera una nueva clave ssh pública en el directorio `~/.ssh`, si no la tienes,   sigue las instrucciones del siguiente artículo: [Trabajando con claves SSH](ssh-con-claves.md)
-   * Copia el contenido de tu fichero en tu perfil de GitHub `~/.ssh/id_rsa.pub`.
-   * Añade una nueva clave SSH en el apartado "SSH keys" de tu perfil en GitHub y pega el contenido de tu clave pública.
+   * Copia el contenido de tu fichero en tu perfil de GitHub `~/.ssh/id_rsa.pub`. Para ello, añade una nueva clave SSH en el apartado "SSH keys" de tu perfil en GitHub y pega el contenido de tu clave pública.
    * Para más información, lee el siguiente artículo: <https://docs.github.com/es/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account>
 	 
 
